@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Book Info</title>
+</head>
+
+<body>
+
+
+  <div class="info-box">
+    <div class="row d-block">
+
+        <h2><%= title %></h2>
+
+      <div class="about-box">
+        <p><%= info %></p>
+
+      </div>
+
+    </div>
+    <form>
+      <button class="btn btn-outline-dark btn-lg shadow-lg button-back" type="button" name="button" onclick="history.back()">Back</button>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
