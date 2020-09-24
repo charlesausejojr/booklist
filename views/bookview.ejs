@@ -37,9 +37,12 @@
 
       <table class="table table-light table-striped">
       <thead class="thead-light">
-        <th class="left-th">Book Name</th>
+        <th  class="left-th">Book Name</th>
         <th>Author</th>
         <th>Genre</th>
+
+
+
         <th class="right-th"></th>
       </thead>
 
@@ -48,7 +51,10 @@
       <td>No books yet 🥺</td>
       <td>🥺</td>
       <td>🥺</td>
+      <td>🥺</td>
+      <td>🥺</td>
       <td></td>
+
     </tr>
   <%}%>
 
@@ -59,9 +65,17 @@
       <td class="book-title"><%= book.title %></td>
       <td><%= book.author %></td>
       <td><%= book.genre %></td>
-      <form class="" action="/info/<%= book.title %>" method="get">
-          <td class="centered"><button class="btn btn-outline-dark" type="submit" name="button">More Info</button></td>
+      <!-- <td><%= book.status %></td> -->
+      <td class="two-buttons">
+      <form class="d-inline" action="/info/<%= book.title %>" method="get">
+          <button class="btn btn-sm btn-outline-dark" type="submit" name="button">More Info</button>
+          <input type="hidden" name="bookId" value="<%= book._id %>">
       </form>
+      <form class="d-inline" action="/update/<%= book.title %>" method="get">
+          <button class="btn btn-sm btn-dark " type="submit" name="button">Update</button>
+      </form>
+
+      </td>
     </tr>
   <% }) %>
 <%}%>

@@ -52,6 +52,15 @@ body{
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
+.home-box{
+  text-align: center;
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  background: #eeeeee;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
 .title-box{
   color: #eeeeee;
   text-align: center;
@@ -113,12 +122,19 @@ body{
   top: 65px;
   left: 350px;
 }
+input:checked + td {
+  color: red;
+  text-decoration: line-through;
+}
 .bottom-button{
   margin-right: 20px;
 }
 .btn-outline-light{
   border-radius: 5px;
   border: none;
+}
+.two-buttons{
+  width: 230px;
 }
 .button-back{
   margin: 3%;
@@ -143,6 +159,12 @@ body{
   margin-left: 60px;
   text-align: left;
 }
-.flexed{
-  display: inline;
+.d-block h6{
+  margin-top: 20px;
+  margin-left: 60px;
+  text-align: left;
+}
+.jumbotron{
+  background-image: url(../images/book-bg2.jpeg);
+  color: black;
 }
